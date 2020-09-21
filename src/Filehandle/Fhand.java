@@ -13,5 +13,6 @@ public class Fhand {
         DataInputStream din=new DataInputStream(fis);
         String str=din.readUTF();
         System.out.println(str);
+
     }
 }
