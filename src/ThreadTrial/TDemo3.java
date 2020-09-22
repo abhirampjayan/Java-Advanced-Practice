@@ -25,6 +25,11 @@ public class TDemo3 {
         t1.start();
         Thread.sleep(10);
         t2.start();
-        System.out.println("BYE");
+
+        t1.join(); // main wait till t1 complete it's execution
+        t2.join();// main wait till t1 complete it's execution
+
+        System.out.println(t1.isAlive());
+        System.out.println("Bye");
     }
 }
